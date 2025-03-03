@@ -1,30 +1,11 @@
 import React from "react";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 function LandingPage() {
   return (
     <>
-      <nav className="flex justify-between items-center w-[95%] mt-4 mx-auto bg-black text-white rounded-xl text-xl h-12 px-6">
-        {/* Logo */}
-        <div className="text-3xl font-bold">AthleteAlly</div>
-
-        {/* Navigation Links */}
-        <div className="flex space-x-8">
-          <div>About</div>
-          <div>Home</div>
-          <div>Services</div>
-          <div>Events</div>
-        </div>
-
-        {/* Search Box */}
-        <div>
-          <input
-            type="text"
-            className="bg-white text-black px-2 py-1 rounded-md"
-            placeholder="Search..."
-          />
-        </div>
-      </nav>
-
+      <Navbar />
       <main>
         {/* Video Background Section */}
         <div className="relative w-[95%] mt-4 mx-auto bg-black text-white rounded-xl h-[570px] overflow-hidden">
@@ -307,25 +288,7 @@ function LandingPage() {
           </div>
         </div>
 
-        {/* Footer */}
-        <div className="h-82 bg-[#3B4651] mt-12 text-white">
-          <div className="flex h-48">
-            <div className=" w-[65%] p-15 pl-35">
-              <div className="text-4xl font-bold">AthleteAlly</div>
-              <div className="text-xl mt-2 font-semibold">
-                Empowering Athletes Worldwide
-              </div>
-            </div>
-            <div className=" w-[35%] p-15 pl-20 text-xl font-semibold">
-              <div>Privacy Policy</div>
-              <div className="mt-2">Terms of Services</div>
-              <div className="mt-2">Contact Us</div>
-            </div>
-          </div>
-          <div className="text-center font-semibold text-lg mt-20">
-            @2024 AthleteAlly.All rights reserved.
-          </div>
-        </div>
+        <Footer />
       </main>
     </>
   );
